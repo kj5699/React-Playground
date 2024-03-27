@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import styles from './styles.module.scss';
-import { handleNewLineInLists } from './utils';
+import { handleNewLineInLists } from '../../utils/markdownUtils';
 
 const Editor = ({onTextInput}) => {
     const handleKeyDown = (event) => {

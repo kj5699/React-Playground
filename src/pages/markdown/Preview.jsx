@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import styles from './styles.module.scss';
 
-import { parseContent } from './utils';
+import { parseContent } from '../../utils/markdownUtils';
 
 const Preview = ({value}) => {
   return (

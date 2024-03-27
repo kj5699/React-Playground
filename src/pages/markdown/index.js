@@ -2,7 +2,7 @@ import React, { useCallback, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 import Preview from './Preview';
 import Editor from './Editor';
-import { getCurrentLine } from './utils';
+import { getCurrentLine } from '../../utils/markdownUtils';
 import Layout from '@/Components/HOC/Layout';
 
 

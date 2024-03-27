@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 import Gameboard from './gameboard';
 import Button from '@/Components/Base/Button';
-import { ResultType } from './logicUtils';
+import { ResultType } from '../../utils/logicUtils';
 
 
 const TicTacToe = () => {

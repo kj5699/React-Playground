@@ -51,12 +51,13 @@ export const checkforHorizotalLine = (line) => {
     return line
 }
 
-const pipe  = (value) => ({
-    value,
-    to : cb => pipe(cb(value))
-});
+
 
 export const parseList = (lines) => {
+    const pipe  = (value) => ({
+        value,
+        to : cb => pipe(cb(value))
+    });
     let start = -1;
     let current = 0;
     let finalLines = [...lines];
@@ -111,10 +112,13 @@ export const getCurrentLine= () =>{
         currentNode?.classList?.add('activeLine');
     }
 }
-
+const pipe  = (value) => ({
+    value,
+    to : cb => pipe(cb(value))
+});
 export const parseContent = (text) => {
-    const textLines = text.trim().split('\n')
-    let parsedTextLines = textLines.map((line) => {
+    const textLines = text?.trim()?.split('\n')
+    let parsedTextLines = textLines?.length > 0 ?  textLines?.map((line) => {
         let parsedLine = line;
         parsedLine = pipe(parsedLine)
                         .to(checkForHeaders)
@@ -124,10 +128,10 @@ export const parseContent = (text) => {
                         to(checkforLineBreaks)
                         .to(checkforOrderedLine)
                         .to(checkforBulletedLine)
-                        .value;
+                        .value ;
 
         return parsedLine
-    })
+    }):[];
     const finalText = parsedTextLines.join('');
     return finalText
 }

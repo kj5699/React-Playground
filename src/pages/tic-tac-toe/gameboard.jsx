@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { InitalBoardValue, Players, ResultType, checkAllFilled, checkColumns, checkDiagnols, checkRows, getWinner } from './logicUtils';
+import { InitalBoardValue, Players, ResultType, checkAllFilled, checkColumns, checkDiagnols, checkRows, getWinner } from '../../utils/logicUtils';
 import styles from './styles.module.scss';
 
 const Cell = ({value, cellClickHandler}) => {

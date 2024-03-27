@@ -2,7 +2,10 @@
   "name": "react-playground",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gitname.github.io/React-Playground",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -20,6 +23,7 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "prettier": "2.8.8"
   }
 }
