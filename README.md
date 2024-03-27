@@ -2,6 +2,9 @@
 This repo has basic implementations of some small machine coding problems
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Live 
+Check out the deployed version at https://react-playground-uhfb.vercel.app/playground
+
 ## Getting Started
 
 First, run the development server:
