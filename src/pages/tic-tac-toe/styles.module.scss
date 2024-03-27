@@ -1,0 +1,58 @@
+.arena{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .resultSection{
+        @apply flex flex-col items-center justify-center p-8 w-1/2;
+    }
+    
+}
+
+.gameBoard{
+    width: 420px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: #A2A392;
+    border-radius: 0.25rem;
+
+}
+.cell{
+    border-radius: 0.25rem;
+    border: 1px solid #494947;
+    background-color: #494947;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 126px;
+    z-index: 1;
+    cursor: pointer;
+    &:hover{
+        width: 130px;
+        height: 130px;
+    }
+    .cellText{
+       @apply text-main-white text-5xl; 
+    }
+
+}
+.filled{
+    background-color: #EB5757;
+}
+.overlay{
+    @apply absolute w-full h-full opacity-75 bg-main-primary z-10 rounded p-4 text-main-white text-xl text-center ;
+}
+.finished{
+    @apply bg-main-red opacity-25 ;
+}
+.playerSection{
+     @apply flex justify-between mb-8 w-full px-16 ;
+}
+
+

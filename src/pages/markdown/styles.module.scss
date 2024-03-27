@@ -1,0 +1,44 @@
+
+.markdown__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-height: calc( 100vh - 64px );
+
+}
+.editorWrapper{
+    width: 100%;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+    background-color: rgb(222, 222, 222);
+    margin-right: 16px;
+    color: black;
+    padding:16px;
+    border:  1px solid grey; 
+    .editor{
+        height: 100%;
+        padding: 1rem 0.25rem;
+        outline: none;
+
+    }
+}
+.previewWrapper{
+    width: 100%;
+    overflow-x:hidden ;
+    overflow-y: scroll;
+    background-color: #aaa;
+    border: 1px solid grey; 
+    padding: 16px;
+    .preview{
+        height: 100%;
+        padding: 1rem 0.25rem;
+    }
+}
+.header{
+    border-bottom: 0.5px dotted black;
+    padding: 0.5rem;
+
+}
+.activeLine {
+    background-color: beige;
+}

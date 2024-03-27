@@ -1,0 +1,20 @@
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.itemList{
+    width: 50%;
+}
+.item {
+    border: 1px solid black;
+    margin: 4px 0;
+    padding: 16px;
+    display: flex;
+    border-radius: 0.5rem;
+    &__focused{
+        background-color: grey;
+    }
+} 
+
+
