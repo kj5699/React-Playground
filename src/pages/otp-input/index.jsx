@@ -2,7 +2,8 @@ import Layout from '@/Components/HOC/Layout'
 import React, { useMemo, useState } from 'react';
 import styles from './styles.module.scss';
 import Button from '@/Components/Base/Button';
-import { OtpInput } from './otpInput';
+import OtpInput from './otpInput';
+
 
 const OtpUI = ({otpLength = 4}) => {
   const [otp, setOtp] = useState(Array(otpLength).fill("")); // stores otp value
