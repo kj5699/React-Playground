@@ -1,0 +1,48 @@
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px auto;
+    .item{
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        cursor: pointer;
+    }
+}
+.paginationContainer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background-color: beige;
+    gap:8px;
+
+    .paginatedItem{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 16px;
+        border: 1px solid grey;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+            background-color: rgb(49, 49, 49);
+        }
+    }
+    .currentPage{
+        color: #fff;
+        background-color: rgb(49, 49, 49);
+    }
+}
