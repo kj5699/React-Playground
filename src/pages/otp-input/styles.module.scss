@@ -1,0 +1,27 @@
+.otp__container{
+    width: 400px;
+    height: 100%;
+    margin: 64px auto;
+
+
+
+    .input__container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .input__box{
+            outline:none;
+            width: 48px;
+            height: 48px;
+            border-radius: 0.5rem;
+            border: 1px solid beige;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            padding:8px;
+            &:focus, .isActive{
+                border: 1px solid black;
+            }
+        }
+    }
+}

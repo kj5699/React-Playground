@@ -3,5 +3,6 @@ export const ProjectData = [
     {id :  1, link : '/drag-and-drop', imageSrc: null, name:'Drag And Drop' },
     {id :  2 , link : '/tic-tac-toe', imageSrc: null, name:'Tic-Tac-Toe' },
     {id :  3 , link : '/carousal', imageSrc: null, name:'Carousal' },
-    {id : 4 , link:'/markdown',imageSrc: null, name:'Markdown' }
+    {id : 4 , link:'/markdown',imageSrc: null, name:'Markdown' },
+    {id : 4 , link:'/otp-input',imageSrc: null, name:'Otp Input UI' }
 ];
