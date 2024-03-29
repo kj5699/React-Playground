@@ -2,7 +2,7 @@ import Layout from '@/Components/HOC/Layout';
 import styles from './styles.module.scss';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { PaginationContainer } from './paginator';
+import PaginationContainer from './paginator';
 
 
 const Pagination = () => {
@@ -19,8 +19,9 @@ const Pagination = () => {
   },[router.isReady,currentPage]);
   
   useEffect(()=>{
-    const fetchData =() =>{
-        fetch(`https://dummyjson.com/products?skip=${10* (currentPage-1)}&limit=10`)
+    console.log('Use Effect Called');
+    const fetchData = async () =>{
+        let res =fetch(`https://dummyjson.com/products?skip=${10* (currentPage-1)}&limit=10`)
         .then(res => res.json())
         .then(json => setData(json.products))
     };

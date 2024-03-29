@@ -1,0 +1,22 @@
+.postsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px auto;
+    height: 100%;
+    max-height: calc(100vh - 64px);
+    overflow: scroll;
+    .post{
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        cursor: pointer;
+        max-width: 560px;
+    }
+}

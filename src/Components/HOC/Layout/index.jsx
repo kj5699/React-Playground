@@ -4,12 +4,12 @@ import styles from './styles.module.scss';
 const Layout = ({ children , headingText} ) => {
   return (
     <div className={styles.container}>
-        <div className={styles.header}>
-            <h3 className={styles.heading}>{headingText}</h3>
-        </div>
-        <div className={styles.content}>
+        <header className={styles.header}>
+            <h1 className={styles.heading}>{headingText}</h1>
+        </header>
+        <main className={styles.content}>
             {children}
-        </div>
+        </main>
 
     </div>
   );

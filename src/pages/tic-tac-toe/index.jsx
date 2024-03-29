@@ -19,7 +19,7 @@ const TicTacToe = () => {
   return (
     <Layout headingText={'Tic Tac Toe'}>
         <div className={styles.arena}>
-            <div className={styles.resultSection}>
+            <section className={styles.resultSection}>
                 <div className='w-32 mb-8'>
                   {gameStarted || result? 
                    <Button label={'Reset Game'} onClick={resetHandler} />
@@ -33,7 +33,7 @@ const TicTacToe = () => {
                   </div>: 
                 null}
               
-            </div>
+            </section>
             <Gameboard 
               currentPlayer={currentPlayer} 
               setCurrentPlayer={setCurrentPlayer} 

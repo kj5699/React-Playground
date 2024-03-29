@@ -50,7 +50,7 @@ const Gameboard = ({ setResult, currentPlayer, setCurrentPlayer, gameStarted, re
 
 
   return (
-    <div className=' relative p-8 flex flex-col items-center justify-center w-1/2 h-full'>
+    <section className=' relative p-8 flex flex-col items-center justify-center w-1/2 h-full'>
         {!gameStarted ? 
             <div className={`${styles.overlay}`}
                 onClick={(e)=> e.stopPropagation()}> 
@@ -78,7 +78,7 @@ const Gameboard = ({ setResult, currentPlayer, setCurrentPlayer, gameStarted, re
             })}
         </div>
         
-    </div>
+    </section>
   )
 }
 
